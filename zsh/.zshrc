@@ -1,8 +1,6 @@
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
-##Alias
-alias UPV="/media/quino/Windows/Users/34655/Desktop/UPV/"
-alias ls="ls --color=auto"
-alias grep="grep --color=auto"
+##file imports
+ plug "$HOME/.config/zsh/aliases.zsh"
 # Example install plugins
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-autosuggestions"
