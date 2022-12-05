@@ -1,7 +1,6 @@
 # DotFiles
-This project is meant to provide portability to my dotFiles so it's possible to change machine
-without too much hassle.
-It will contain my current Linux Desktop setup.
+This project is meant to contain my current Linux Desktop setup, by providing portability to my dotFiles I will be able to switch machines
+without too much hassle. It also may come in handy if the OS crashes horribly.
 ## How to Use
 - Installing 'GNU Stow' (sudo apt install Stow)
 - Cloning this repository into the home directory a.k.a '~'
