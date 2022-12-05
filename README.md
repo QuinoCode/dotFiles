@@ -6,4 +6,4 @@ without too much hassle.
 - Cloning this repository into the home directory a.k.a '~'
 - stow 'whateverYouWant' will copy that to ~/.config/whateverYouWant
 - stow */ to copy everything into ~/.config/
-
+- Obviously using this repository to make changes to the dotFiles so there is a record of the code
