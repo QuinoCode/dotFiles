@@ -7,3 +7,9 @@ without too much hassle. It also may come in handy if the OS crashes horribly.
 - stow 'whateverYouWant' will copy that to ~/.config/whateverYouWant
 - stow */ to copy everything into ~/.config/
 - Obviously using this repository to make changes to the dotFiles so there is a record of the code
+## Instructions to add further dotFiles
+- mkdir nameOfTheProgram && cd nameOfTheProgram
+- mkdir .config && cd .config
+- mkdir nameOfTheProgram && cd nameOfTheProgram
+- Put the dotFile here
+
