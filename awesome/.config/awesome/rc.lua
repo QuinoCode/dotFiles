@@ -1,7 +1,7 @@
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
-
+pcall(require, "volume.lua")
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -232,6 +232,7 @@ awful.screen.connect_for_each_screen(function(s)
             mylauncher,
             s.mytaglist,
             s.mypromptbox,
+            s.volume_widget,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
@@ -298,7 +299,19 @@ globalkeys = gears.table.join(
             end
         end,
         {description = "go back", group = "client"}),
+    -- Brightness
 
+    awful.key({ }, "XF86MonBrightnessDown", function ()
+        awful.util.spawn("xbacklight -dec 15") end),
+    awful.key({ }, "XF86MonBrightnessUp", function ()
+        awful.util.spawn("xbacklight -inc 15") end),
+    -- Volume control
+    awful.key({ }, "XF86AudioRaiseVolume", function ()
+       awful.util.spawn("amixer set Master 9%+") end),
+    awful.key({ }, "XF86AudioLowerVolume", function ()
+       awful.util.spawn("amixer set Master 9%-") end),
+    awful.key({ }, "XF86AudioMute", function ()
+       awful.util.spawn("amixer sset Master toggle") end),
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
@@ -344,7 +357,7 @@ globalkeys = gears.table.join(
               {description = "run Telegram", group = "launcher"}),
 
     -- Explorer
-    awful.key({ modkey },            "e",     function () awful.util.spawn("nautilus Desktop/UPV") end,
+    awful.key({ modkey },            "e",     function () awful.util.spawn("nautilus /media/quino/Windows/Users/34655/Desktop/UPV") end,
               {description = "run explorer", group = "launcher"}),
 
     -- MPDFeditor
@@ -352,7 +365,7 @@ globalkeys = gears.table.join(
               {description = "run MpdfEditor", group = "launcher"}),
 
     -- Browser
-    awful.key({ modkey },            "b",     function () awful.util.spawn("brave") end,
+    awful.key({ modkey },            "b",     function () awful.util.spawn("brave-browser") end,
               {description = "run browser", group = "launcher"}),
 
     awful.key({ modkey }, "x",
