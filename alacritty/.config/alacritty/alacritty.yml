@@ -9,7 +9,7 @@ window:
   padding:
     x: 3
     y: 3
-  opacity: 0.95
+  opacity: 0.80
 font:
   normal:
     family: "Hack NF"
