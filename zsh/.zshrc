@@ -11,3 +11,6 @@ plug "zap-zsh/zap-prompt"
 
 # Example install completion
 plug "esc/conda-zsh-completion"
+
+#[ -f "/home/quino/.ghcup/env" ] && source "/home/quino/.ghcup/env" # ghcup-env
+[ -f "/home/quino/.ghcup/env" ] && source "/home/quino/.ghcup/env" # ghcup-env
