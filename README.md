@@ -4,6 +4,7 @@ without too much hassle. It also may come in handy if the OS crashes horribly.
 ## How to Use
 - Installing 'GNU Stow' (sudo apt install Stow)
 - Cloning this repository into the home directory a.k.a '~'
+- If there is already any folder holding configurations that would be dealt with using this repo, delete them
 - stow 'whateverYouWant' will copy that to ~/.config/whateverYouWant
 - stow */ to copy everything into ~/.config/
 - Obviously using this repository to make changes to the dotFiles so there is a record of the code
