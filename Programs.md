@@ -11,6 +11,7 @@
   - masterPdfEditor4 (version 4)
   - Brave (with Vimium)
   - Java
+    - openJdk
   - Ghci
   - Git
   - Stow

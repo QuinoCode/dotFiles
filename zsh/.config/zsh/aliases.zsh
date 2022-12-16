@@ -7,7 +7,7 @@ alias nvimrc='nvim ~/.config/nvim/'
 alias yay="paru"
 
 #My shortcuts
-alias UPV="/media/quino/Windows/Users/34655/Desktop/UPV/"
+alias UPV="/media/quino/Windows/Users/34655/Desktop/UPV/2º/Primer\ cuatrimestre/ "
 # alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
 
 # get fastest mirrors
