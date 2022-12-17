@@ -17,3 +17,5 @@
   - Stow
   - Zsh 
     - Zap 
+  - lxappearance (to customize the default System appearance)
+  - gnome-control-center workaround if breaks: dconf reset -f /org/gnome/control-center/
