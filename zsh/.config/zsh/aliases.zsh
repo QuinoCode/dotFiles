@@ -7,7 +7,7 @@ alias nvimrc='nvim ~/.config/nvim/'
 alias yay="paru"
 
 #My shortcuts
-alias UPV="/media/quino/Windows/Users/34655/Desktop/UPV/2º/Primer\ cuatrimestre/ "
+alias UPV="/media/quino/Windows/Users/34655/Desktop/UPV/2º/Segundo\ cuatrimestre"
 alias UPV-CS="/media/quino/Windows/Users/34655/Desktop/Programación/GitHub-repositories/UPV-CS"
 # alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
 
