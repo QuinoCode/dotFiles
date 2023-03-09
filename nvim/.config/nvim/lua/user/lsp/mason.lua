@@ -4,6 +4,7 @@ local servers = {
 	"html",
 	"tsserver",
 	"hls",
+  "omnisharp",
 	"pyright",
 	"bashls",
 	"jsonls",

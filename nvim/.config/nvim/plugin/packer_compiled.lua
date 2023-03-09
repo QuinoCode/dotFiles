@@ -224,6 +224,11 @@ _G.packer_plugins = {
     path = "/home/quino/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["omnisharp-vim"] = {
+    loaded = true,
+    path = "/home/quino/.local/share/nvim/site/pack/packer/start/omnisharp-vim",
+    url = "https://github.com/Omnisharp/omnisharp-vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/quino/.local/share/nvim/site/pack/packer/start/packer.nvim",
