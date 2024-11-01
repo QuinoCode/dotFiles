@@ -1,0 +1,148 @@
+// Place your key bindings in this file to override the defaults
+[
+    //Togglers
+    //////////////////////////////////
+    //Toggle File explorer
+    {
+        "command": "runCommands",
+        "key": "alt+e",
+        "args": {
+            "commands": [
+                //commands to run in sequence
+                "workbench.files.action.focusFilesExplorer"
+            ],
+
+        },
+          "when": "!sideBarFocus"
+    },
+    {
+        "command": "runCommands",
+        "key": "alt+e",
+        "args": {
+            "commands": [
+                //commands to run in sequence
+                "workbench.action.toggleSidebarVisibility"
+            ],
+
+        },
+          "when": "sideBarFocus"
+    },
+    //Toggling File control
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "alt+c",
+        "when": "sideBarFocus"
+    },
+    {
+        "command": "workbench.view.scm",
+        "key": "alt+c",
+        "when": "!sideBarFocus"
+    },
+    //Toggling Debug
+    {
+        "command": "workbench.action.debug.start",
+        "args": { "config": "Odoo: Launch" },
+        "key": "alt+shift+d",
+    },
+    {
+        "command": "workbench.view.debug",
+        "key": "alt+d",
+        "when": "editorFocus"
+    },
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "alt+d",
+        "when": "sideBarFocus"
+    },
+    {
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run Odoo",
+        "key": "alt+r",
+        "when": "editorFocus"
+    },
+    //Toggling Terminal
+    {
+        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "alt+t",
+        "when": "editorFocus"
+    },
+    {
+        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "alt+t",
+        "when": "!editorFocus"
+    },
+    ///////////////////////////////////
+    // Open folder from file explorer
+    {
+        "command": "vscode.openFolder",
+        "key": "ctrl+shift+o",
+        "when": "sideBarFocus"
+    },
+
+    //Fuzzy finder like obsidian
+    {
+        "command": "multiDiffEditor.goToFile",
+        "key": "ctrl+o"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    //Maximize an editor window
+    {
+        "key": "alt+f",
+        "command": "workbench.action.toggleMaximizeEditorGroup"
+    },
+    //Movement between tabs and panes
+    {
+        "key": "alt+j",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "workbench.action.navigateUp"
+    },
+    //Moving tab to panes
+    {
+        "key": "alt+shift+l",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "alt+shift+h",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "alt+shift+j",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "key": "alt+shift+k",
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    // Random stuff
+    {
+        "key": "ctrl+shift+Space",
+        "command": "editor.action.triggerParameterHints"
+    }
+
+]

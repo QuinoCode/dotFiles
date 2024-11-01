@@ -1,0 +1,41 @@
+
+{
+    "editor.lineNumbers": "relative",
+    "vim.vimrc.enable": true,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "zenMode.showTabs": "none",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "window.customTitleBarVisibility": "auto",
+    "breadcrumbs.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "vim.leader": ",",
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-o>": false,
+        "<C-p>": false,
+        "<C-w>": false,
+    },
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.commandsToSkipShell": [
+        "terminal.toggleVisibility"
+    ],
+    "cmake.configureOnOpen": true,
+    "[cmake]": {},
+    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'",
+    "editor.fontFamily": "'Hack Nerd Font Mono'",
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorCustomizations": {
+        "editor.background": "#0c111a"   
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "emulator.emulatorPath": "/home/ayuda106/Android/Sdk/emulator/emulator",
+    "dart.flutterSdkPath": "/home/ayuda106/Desktop/personal/files/flutter",
+    "dart.debugExternalPackageLibraries": true,
+    "dart.debugSdkLibraries": false
+}

@@ -2,20 +2,16 @@
   - Discord
   - Telegram
 ## WorkFlow
+  - Code
   - Neovim
   - Alacritty
     - Alacritty-Themes
-  - AwesomeWm
-    - Dmenu
-    - compton
+  - I3
   - masterPdfEditor4 (version 4)
-  - Brave (with Vimium)
-  - Java
-    - openJdk
-  - Ghci
+  - Firefox (with Vimium)
   - Git
   - Stow
+  - OpenSSH
   - Zsh 
     - Zap 
-  - lxappearance (to customize the default System appearance)
   - gnome-control-center workaround if breaks: dconf reset -f /org/gnome/control-center/
