@@ -1,4 +1,6 @@
 # Paths
+## Flutter
+export PATH="$PATH:$HOME/Desktop/personal/files/flutter/bin"
 ## Android
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
