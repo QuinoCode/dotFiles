@@ -7,8 +7,12 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-## Flutter
-export PATH="$PATH:$HOME/Desktop/personal/files/flutter"
+# Aliases
+## Configure nvim
+alias nvimrc='nvim $HOME/.config/nvim/' 
+alias Prizo='cd $HOME/Desktop/personal/files/PIN/prizo/lib/'
+## open PIN in nvim
+alias nvimPrizo='nvim $HOME/Desktop/personal/files/PIN/prizo/lib/'
 
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
