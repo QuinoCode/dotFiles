@@ -8,12 +8,22 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Aliases
+## Movement
+### Go to dotfiles
+alias cddotF='cd ~/dotFiles/'
+### Go to dev
+alias cddev='cd ~/Desktop/personal/dev/'
+### Go to PIN
+##end of Movement
+alias cdprizo='cd $HOME/Desktop/personal/files/PIN/prizo/'
 ## Configure nvim
 alias nvimrc='nvim $HOME/.config/nvim/' 
-alias Prizo='cd $HOME/Desktop/personal/files/PIN/prizo/lib/'
+## Configure zsh
+alias nvimzsh='nvim $HOME/.zshrc'
 ## open PIN in nvim
-alias nvimPrizo='nvim $HOME/Desktop/personal/files/PIN/prizo/lib/'
+alias nvimprizo='nvim $HOME/Desktop/personal/files/PIN/prizo/lib/'
 
+####### end Aliases
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
