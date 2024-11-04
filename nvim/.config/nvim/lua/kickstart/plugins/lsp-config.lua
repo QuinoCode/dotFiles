@@ -189,6 +189,7 @@ return {
 
         --Dart Configuration (copied from :help lsplconfig-all and Robert Brunhage)
         --https://github.com/dart-lang/sdk/tree/master/pkg/analysis_server/tool/lsp_spec
+        --[[
         require('lspconfig').dartls.setup {
           dartls = {
             cmd = { 'dart', 'language-server', '--protocol=lsp' },
@@ -213,7 +214,7 @@ return {
               },
             },
           },
-        },
+        },]] --
         --[[ End of dart]]
 
         lua_ls = {
