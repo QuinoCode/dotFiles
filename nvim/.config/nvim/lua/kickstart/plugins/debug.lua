@@ -29,10 +29,10 @@ return {
     local dapui = require 'dapui'
     return {
       -- Basic debugging keymaps, feel free to change to your liking!
-      { '<F5>', dap.continue, desc = 'Debug: Start/Continue' },
-      { '<F1>', dap.step_into, desc = 'Debug: Step Into' },
-      { '<F2>', dap.step_over, desc = 'Debug: Step Over' },
-      { '<F3>', dap.step_out, desc = 'Debug: Step Out' },
+      { '<F5>',      dap.continue,          desc = 'Debug: Start/Continue' },
+      { '<F1>',      dap.step_into,         desc = 'Debug: Step Into' },
+      { '<F2>',      dap.step_over,         desc = 'Debug: Step Over' },
+      { '<F3>',      dap.step_out,          desc = 'Debug: Step Out' },
       { '<leader>b', dap.toggle_breakpoint, desc = 'Debug: Toggle Breakpoint' },
       {
         '<leader>B',
@@ -113,5 +113,47 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
+    -- Flutter configuration
+    dap.configurations.dart = {
+      {
+        type = "dart",
+        request = "launch",
+        name = "Launch dart",
+        dartSdkPath = "$HOME/Desktop/personal/files/flutter/bin/dart",       -- ensure this is correct
+        flutterSdkPath = "$HOME/Desktop/personal/files/flutter/bin/flutter", -- ensure this is correct
+        program = "${file}",                                                 --"${workspaceFolder}/lib/main.dart",                        -- ensure this is correct
+        --cwd = "${workspaceFolder}",
+      },
+      {
+        type = "flutter",
+        request = "launch",
+        name = "Launch flutter",
+        dartSdkPath = "$HOME/Desktop/personal/files/flutter/bin/dart",       -- ensure this is correct
+        flutterSdkPath = "$HOME/Desktop/personal/files/flutter/bin/flutter", -- ensure this is correct
+        program = "${workspaceFolder}/lib/main.dart",                        -- ensure this is correct
+        cwd = "${workspaceFolder}",
+      }
+    }
+    -- Dart CLI adapter (recommended)
+    dap.adapters.dart = {
+      type = 'executable',
+      command = 'dart', -- if you're using fvm, you'll need to provide the full path to dart (dart.exe for windows users), or you could prepend the fvm command
+      args = { 'debug_adapter' },
+      -- windows users will need to set 'detached' to false
+      options = {
+        detached = false,
+      }
+    }
+    dap.adapters.flutter = {
+      type = 'executable',
+      command = 'flutter', -- if you're using fvm, you'll need to provide the full path to flutter (flutter.bat for windows users), or you could prepend the fvm command
+      args = { 'debug_adapter' },
+      -- windows users will need to set 'detached' to false
+      options = {
+        detached = false,
+      }
+    }
   end,
+  -- Dart specific config: https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#dart
+
 }

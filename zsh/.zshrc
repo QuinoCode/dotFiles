@@ -17,11 +17,11 @@ alias cddev='cd ~/Desktop/personal/dev/'
 ##end of Movement
 alias cdprizo='cd $HOME/Desktop/personal/files/PIN/prizo/'
 ## Configure nvim
-alias nvimrc='nvim $HOME/.config/nvim/' 
+alias nvimrc='cd $HOME/.config/nvim/ && nvim .' 
 ## Configure zsh
 alias nvimzsh='nvim $HOME/.zshrc'
 ## open PIN in nvim
-alias nvimprizo='nvim $HOME/Desktop/personal/files/PIN/prizo/lib/'
+alias nvimprizo='cd $HOME/Desktop/personal/files/PIN/prizo/ && nvim .'
 
 ####### end Aliases
 # Created by Zap installer
