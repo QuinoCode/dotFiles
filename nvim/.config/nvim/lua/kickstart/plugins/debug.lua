@@ -115,7 +115,7 @@ return {
     }
     -- Flutter configuration
     dap.configurations.dart = {
-      {
+      --[[{
         type = "dart",
         request = "launch",
         name = "Launch dart",
@@ -123,19 +123,19 @@ return {
         flutterSdkPath = "$HOME/Desktop/personal/files/flutter/bin/flutter", -- ensure this is correct
         program = "${file}",                                                 --"${workspaceFolder}/lib/main.dart",                        -- ensure this is correct
         --cwd = "${workspaceFolder}",
-      },
+      },]] --
       {
         type = "flutter",
         request = "launch",
         name = "Launch flutter",
         dartSdkPath = "$HOME/Desktop/personal/files/flutter/bin/dart",       -- ensure this is correct
         flutterSdkPath = "$HOME/Desktop/personal/files/flutter/bin/flutter", -- ensure this is correct
-        program = "${workspaceFolder}/lib/main.dart",                        -- ensure this is correct
+        program = "${file}",                                                 --"${workspaceFolder}/lib/main.dart",                        -- ensure this is correct
         cwd = "${workspaceFolder}",
       }
     }
     -- Dart CLI adapter (recommended)
-    dap.adapters.dart = {
+    --[[dap.adapters.dart = {
       type = 'executable',
       command = 'dart', -- if you're using fvm, you'll need to provide the full path to dart (dart.exe for windows users), or you could prepend the fvm command
       args = { 'debug_adapter' },
@@ -143,7 +143,7 @@ return {
       options = {
         detached = false,
       }
-    }
+    }]] --
     dap.adapters.flutter = {
       type = 'executable',
       command = 'flutter', -- if you're using fvm, you'll need to provide the full path to flutter (flutter.bat for windows users), or you could prepend the fvm command
