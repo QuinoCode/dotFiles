@@ -22,6 +22,11 @@ alias nvimrc='cd $HOME/.config/nvim/ && nvim .'
 alias nvimzsh='nvim $HOME/.zshrc'
 ## open PIN in nvim
 alias nvimprizo='cd $HOME/Desktop/personal/files/PIN/prizo/ && nvim .'
+## Commands
+### Git log formated as a graph
+alias 'git-graph'='git log --oneline --graph --color --all --decorate'
+### Git log formated as a graph
+alias gnocc='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
 
 ####### end Aliases
 # Created by Zap installer

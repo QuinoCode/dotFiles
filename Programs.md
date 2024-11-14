@@ -7,6 +7,7 @@
   - Alacritty
     - Alacritty-Themes
   - I3
+    - feh (wallpaper utility)
   - masterPdfEditor4 (version 4)
   - Firefox (with Vimium)
   - Git
