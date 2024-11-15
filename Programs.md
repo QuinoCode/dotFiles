@@ -8,6 +8,7 @@
     - Alacritty-Themes
   - I3
     - feh (wallpaper utility)
+    - picom (transparency utility)
   - masterPdfEditor4 (version 4)
   - Firefox (with Vimium)
   - Git
