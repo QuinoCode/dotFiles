@@ -9,6 +9,7 @@
   - I3
     - feh (wallpaper utility)
     - picom (transparency utility)
+    - rofi (app-launcher)
   - masterPdfEditor4 (version 4)
   - Firefox (with Vimium)
   - Git
