@@ -18,3 +18,5 @@
   - Zsh 
     - Zap 
   - gnome-control-center workaround if breaks: dconf reset -f /org/gnome/control-center/
+### Colors
+Black: #252327

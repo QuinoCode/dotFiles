@@ -1,6 +1,6 @@
 configuration {
 }
-@theme "themes/rounded-purple-dark.rasi"
+@theme "themes/center-image/adi1090x-adapted-crow.rasi"
 
 /* Examples: */
 /*	modes: "window,drun,run,ssh";*/

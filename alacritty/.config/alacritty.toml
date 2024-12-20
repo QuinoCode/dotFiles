@@ -1,6 +1,6 @@
 
 [colors.bright]
-black = "#6272a4"
+black = "#201F21"
 blue = "#d6acff"
 cyan = "#a4ffff"
 green = "#69ff94"
@@ -36,9 +36,9 @@ white = "#f8f8f2"
 yellow = "#f1fa8c"
 
 [colors.primary]
-background = "#282a36"
+background = "#201F21"
 bright_foreground = "#ffffff"
-foreground = "#f8f8f2"
+foreground = "#B7B4B3"
 
 [colors.search.focused_match]
 background = "#ffb86c"

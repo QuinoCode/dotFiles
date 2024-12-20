@@ -23,8 +23,11 @@ require 'options'
 
 require 'keymaps'
 
+
 require 'lazy-bootstrap'
 
 require 'plugins-lazy'
+
+--require 'colorscheme'
 
 -- vim: ts=2 sts=2 sw=2 et

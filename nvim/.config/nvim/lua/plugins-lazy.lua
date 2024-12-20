@@ -7,6 +7,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/conform',
 
+  --require 'custom/plugins/crow-colorscheme',
+
   require 'kickstart/plugins/debug',
 
   require 'custom/plugins/flutter-tools',

@@ -16,6 +16,8 @@ alias cddev='cd ~/Desktop/personal/dev/'
 ### Go to PIN
 ##end of Movement
 alias cdprizo='cd $HOME/Desktop/personal/files/PIN/prizo/'
+## vim = nvim
+alias vim='nvim'
 ## Configure nvim
 alias nvimrc='cd $HOME/.config/nvim/ && nvim .' 
 ## Configure zsh
