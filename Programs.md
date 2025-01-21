@@ -15,8 +15,12 @@
   - Git
   - Stow
   - OpenSSH
+  - LazyGit (TUI for git)
   - Zsh 
-    - Zap 
+    - Zap (plugin manager)
+    - fzf (fuzzy finder)
+    - zoxide (better cd)
+    - thefuck (help when misstyping commands)
   - gnome-control-center workaround if breaks: dconf reset -f /org/gnome/control-center/
 ### Colors
 Black: #252327

@@ -29,6 +29,8 @@ alias nvimprizo='cd $HOME/Desktop/personal/files/PIN/prizo/ && nvim .'
 alias 'git-graph'='git log --oneline --graph --color --all --decorate'
 ### Git log formated as a graph
 alias gnocc='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
+# zoxide is now cd
+alias cd='z'
 
 ####### end Aliases
 # Created by Zap installer
@@ -42,3 +44,8 @@ plug "zsh-users/zsh-syntax-highlighting"
 autoload -Uz compinit
 compinit
 [ -f "/home/ayuda106/.ghcup/env" ] && . "/home/ayuda106/.ghcup/env" # ghcup-env
+
+eval $(thefuck --alias)
+eval "$(zoxide init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
