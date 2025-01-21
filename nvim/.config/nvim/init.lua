@@ -18,6 +18,8 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+vim.cmd.colorscheme('darktooth')
+
 
 require 'options'
 
@@ -28,6 +30,5 @@ require 'lazy-bootstrap'
 
 require 'plugins-lazy'
 
---require 'colorscheme'
 
 -- vim: ts=2 sts=2 sw=2 et

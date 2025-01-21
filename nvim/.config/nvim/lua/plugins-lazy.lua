@@ -13,7 +13,7 @@ require('lazy').setup({
 
   require 'custom/plugins/flutter-tools',
 
-  require 'kickstart/plugins/github-colorscheme',
+  --require 'kickstart/plugins/github-colorscheme',
 
   require 'kickstart/plugins/gitsigns',
 
