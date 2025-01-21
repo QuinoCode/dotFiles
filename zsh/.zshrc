@@ -29,6 +29,7 @@ alias nvimprizo='cd $HOME/Desktop/personal/files/PIN/prizo/ && nvim .'
 alias 'git-graph'='git log --oneline --graph --color --all --decorate'
 ### Git log formated as a graph
 alias gnocc='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
+
 # zoxide is now cd
 alias cd='z'
 
@@ -39,10 +40,23 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "jeffreytse/zsh-vi-mode"
+
+# vim mode zsh
+ZVM_VI_EDITOR=nvim
+
 
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
+
+# Fzf integration
+export FZF_COMPLETION_TRIGGER='**'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+bindkey '^I' fzf-completion
+
 [ -f "/home/ayuda106/.ghcup/env" ] && . "/home/ayuda106/.ghcup/env" # ghcup-env
 
 eval $(thefuck --alias)

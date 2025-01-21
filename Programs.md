@@ -21,6 +21,8 @@
     - fzf (fuzzy finder)
     - zoxide (better cd)
     - thefuck (help when misstyping commands)
+    - tldr (more readable manpages)
+    - zsh-vi-mode (vim mode for zshell)
   - gnome-control-center workaround if breaks: dconf reset -f /org/gnome/control-center/
 ### Colors
 Black: #252327
