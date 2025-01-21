@@ -30,8 +30,9 @@ alias 'git-graph'='git log --oneline --graph --color --all --decorate'
 ### Git log formated as a graph
 alias gnocc='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
 
-# zoxide is now cd
+# zoxide is now 'cd'
 alias cd='z'
+# eza is now 'ls'
 
 ####### end Aliases
 # Created by Zap installer
@@ -41,6 +42,8 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "jeffreytse/zsh-vi-mode"
+
+alias ls='eza --icons=always'
 
 # vim mode zsh
 ZVM_VI_EDITOR=nvim

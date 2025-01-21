@@ -20,6 +20,7 @@
     - Zap (plugin manager)
     - fzf (fuzzy finder)
     - zoxide (better cd)
+    - eza (better ls)
     - thefuck (help when misstyping commands)
     - tldr (more readable manpages)
     - zsh-vi-mode (vim mode for zshell)
