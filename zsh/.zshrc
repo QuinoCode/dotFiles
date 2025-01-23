@@ -1,4 +1,6 @@
 # Paths
+## Added the script folder to the PATH
+PATH="$PATH":"$HOME/.local/scripts/"
 ## Flutter
 export PATH="$PATH:$HOME/Desktop/personal/files/flutter/bin"
 ## Android
@@ -7,6 +9,8 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+echo "~/.zshrc loaded"
 # Aliases
 ## Movement
 ### Go to dotfiles
@@ -43,6 +47,14 @@ plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "jeffreytse/zsh-vi-mode"
 
+#zsh-vi-mode
+function zvm_after_init(){
+  bindkey '^I' fzf-completion  # Ensure Tab triggers fzf completion
+  bindkey '^R' fzf-history-widget  # Ensure Ctrl-R triggers fzf history
+  bindkey '^T' fzf-file-widget  # Ensure Ctrl-T triggers fzf file search
+  bindkey '^[c' fzf-cd-widget  # Ensure Alt-C triggers fzf directory navigation
+}
+
 alias ls='eza --icons=always'
 
 # vim mode zsh
@@ -56,6 +68,7 @@ compinit
 # Fzf integration
 export FZF_COMPLETION_TRIGGER='**'
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey '^I' fzf-completion
@@ -64,5 +77,3 @@ bindkey '^I' fzf-completion
 
 eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

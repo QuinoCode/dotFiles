@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Prizo
+Exec=/home/ayuda106/.local/scripts/tmux-scripts/launch-prizo.sh
+Type=Application
+Icon=utilities-terminal
