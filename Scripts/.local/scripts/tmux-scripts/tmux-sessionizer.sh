@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-echo "movida"
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
