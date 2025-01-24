@@ -10,6 +10,9 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# Bindings
+## Scripts
+bindkey -s '^[t' '~/.local/scripts/tmux-scripts/launch-dev-env.sh\n'
 # Aliases
 ## Movement
 ### Go to dotfiles

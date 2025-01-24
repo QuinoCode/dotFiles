@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.zshrc
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
