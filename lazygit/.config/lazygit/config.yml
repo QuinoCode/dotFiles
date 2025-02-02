@@ -479,8 +479,8 @@ keybinding:
     new: "n"
     edit: e
     openFile: o
-    scrollUpMain: <pgup>
-    scrollDownMain: <pgdown>
+    scrollUpMain: <c-p>
+    scrollDownMain: <c-n>
     scrollUpMain-alt1: K
     scrollDownMain-alt1: J
     scrollUpMain-alt2: <c-u>

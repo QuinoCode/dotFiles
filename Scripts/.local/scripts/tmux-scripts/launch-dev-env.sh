@@ -5,7 +5,7 @@ DIR="$(pwd)"
 
 # Session name
 SESSION_NAME="dev-env"
-
+source ~/.zshrc
 # Create a new tmux session with the first window in the specified directory
 if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
     if [[ -z $TMUX ]]; then 

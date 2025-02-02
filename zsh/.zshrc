@@ -11,8 +11,6 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Bindings
-## Scripts
-bindkey -s '^[t' '~/.local/scripts/tmux-scripts/launch-dev-env.sh\n'
 # Aliases
 ## Movement
 ### Go to dotfiles
@@ -39,7 +37,7 @@ alias gnocc='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
 # zoxide is now 'cd'
 alias cd='z'
 # eza is now 'ls'
-
+alias ls='eza --icons=always'
 ####### end Aliases
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
@@ -55,9 +53,10 @@ function zvm_after_init(){
   bindkey '^R' fzf-history-widget  # Ensure Ctrl-R triggers fzf history
   bindkey '^T' fzf-file-widget  # Ensure Ctrl-T triggers fzf file search
   bindkey '^[c' fzf-cd-widget  # Ensure Alt-C triggers fzf directory navigation
+  ## Scripts 
+  bindkey -s '^[t' '~/.local/scripts/tmux-scripts/launch-dev-env.sh \n'
 }
 
-alias ls='eza --icons=always'
 
 # vim mode zsh
 ZVM_VI_EDITOR=nvim
@@ -73,7 +72,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-bindkey '^I' fzf-completion
+# bindkey '^I' fzf-completion
+
 
 [ -f "/home/ayuda106/.ghcup/env" ] && . "/home/ayuda106/.ghcup/env" # ghcup-env
 

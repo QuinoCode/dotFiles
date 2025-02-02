@@ -10,7 +10,7 @@ SESSION_NAME="Prizo-dev"
 if ! [ -t 1 ]; then
     alacritty -e ~/.local/scripts/tmux-scripts/launch-prizo.sh
 fi
-
+source ~/.zshrc
 # Create a new tmux session with the first window in the specified directory
 if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
     if [[ -z $TMUX ]]; then 
@@ -20,7 +20,7 @@ if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
         tmux switch-client -t "$SESSION_NAME"
     fi
 else 
-    tmux new-session -d -s "$SESSION_NAME" -c "$DIR" -n "nvim" "nvim ."
+    tmux new-session -d -s "$SESSION_NAME" -c "$DIR" -n "vim" "nvim ."
     # Create the second window for lazygit
     tmux new-window -d -t "$SESSION_NAME" -c "$DIR" -n "lazygit" "lazygit"
 
