@@ -1,0 +1,25 @@
+[user]
+	email = joaquinangelvalienteruiz@gmail.com
+	name = QuinoCode
+
+[credential]
+	helper = store
+
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only --side-by-side --line-numbers
+
+[delta]
+	side-by-side = true
+	navigate = true
+	dark = true      # or light = true, or omit for auto-detection
+	line-numbers = true
+
+[merge]
+	conflictStyle = zdiff3
+
+[include]
+path = ~/dotFiles/Delta/themes.gitconfig
+
