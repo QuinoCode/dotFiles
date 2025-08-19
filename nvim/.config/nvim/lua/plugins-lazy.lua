@@ -37,6 +37,8 @@ require('lazy').setup({
 
   require 'custom/plugins/vim-fugitive',
 
+  require 'custom/plugins/vimtex',
+
   require 'kickstart/plugins/which-key',
 }, {
   ui = {

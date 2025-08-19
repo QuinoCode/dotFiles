@@ -8,7 +8,7 @@ return {
     local ls = require("luasnip")
     ls.setup({
       update_events = { "TextChanged", "TextChangedI" },
-      enable_autosnippets = true,
+      enable_autosnipetts = true,
       store_selection_keys = "<Tab>",
     })
     vim.keymap.set({ "i" }, "<C-k>", function() ls.expand() end, { silent = true, desc = "expand autocomplete" })
