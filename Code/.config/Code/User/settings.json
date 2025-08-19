@@ -8,7 +8,7 @@
     "window.customTitleBarVisibility": "auto",
     "breadcrumbs.enabled": false,
     "window.menuBarVisibility": "toggle",
-    "vim.leader": ",",
+    "vim.leader": " ",
     "vim.handleKeys": {
         "<C-b>": false,
         "<C-o>": false,

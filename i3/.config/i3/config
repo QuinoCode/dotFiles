@@ -53,6 +53,8 @@ exec --no-startup-id feh --bg-fill ~/dotFiles/crow_by_the_window.png
 # Transparency
 exec --no-startup-id picom -f -D 4
 
+# Notifications 
+exec --no-startup-id dunst
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 

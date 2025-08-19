@@ -20,11 +20,9 @@ vim.g.have_nerd_font = true
 
 vim.cmd.colorscheme('darktooth')
 
-
 require 'options'
 
 require 'keymaps'
-
 
 require 'lazy-bootstrap'
 

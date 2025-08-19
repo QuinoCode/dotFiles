@@ -3,7 +3,10 @@
 PATH="$PATH":"$HOME/.local/scripts/"
 ## Flutter
 export PATH="$PATH:$HOME/Desktop/personal/files/flutter/bin"
+## Zen
+export PATH="$PATH:$HOME/Desktop/programs/zen/zen"
 ## Android
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -39,6 +42,7 @@ alias cd='z'
 # eza is now 'ls'
 alias ls='eza --icons=always'
 ####### end Aliases
+
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
