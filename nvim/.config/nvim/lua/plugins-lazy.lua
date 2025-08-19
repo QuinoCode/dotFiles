@@ -19,6 +19,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/indent_line',
 
+  require 'custom/plugins/luasnip',
+
   require 'kickstart/plugins/lint',
 
   require 'kickstart/plugins/lsp-config',
